@@ -23,10 +23,10 @@ export default defineNuxtConfig({
   css: ['vuetify/styles'],
 
   site: {
-    url: process.env.APP_URL || 'https://httpsms.com',
-    name: process.env.APP_NAME || 'httpSMS',
+    url: process.env.APP_URL || 'https://broadcastbuddy.peepalfarm.org',
+    name: process.env.APP_NAME || 'Broadcast Buddy',
     description:
-      'Turn your Android phone into an SMS gateway. Send and receive text messages worldwide with a simple HTTP API — no SMS provider or short code required.',
+      'Broadcast Buddy by Peepal Farm. Turn your Android phone into an SMS gateway to easily manage and broadcast messages.',
     defaultLocale: 'en',
   },
 
@@ -161,7 +161,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       titleTemplate: '%s',
-      title: 'Convert your android phone into an SMS gateway - httpSMS',
+      title: 'Broadcast Buddy - by Peepal Farm',
       htmlAttrs: { lang: 'en' },
       script: [
         { src: '/integrations.js', async: true, defer: true },

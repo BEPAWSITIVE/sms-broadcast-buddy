@@ -1,6 +1,6 @@
 services:
   postgres:
-    image: postgres:alpine
+    image: postgres:17-alpine
     environment:
       POSTGRES_DB: httpsms
       POSTGRES_PASSWORD: dbpassword
@@ -43,7 +43,7 @@ services:
     build:
       context: ./web
     ports:
-      - "3000:3000"
+      - "3001:3000"
     depends_on:
       api:
         condition: service_started
